@@ -14,7 +14,7 @@
 <div id="tutorial" ng-include="'tuto/tuto.html'"></div>
 
 <!-- Your code here -->
-<div id="angular-app" ng-app="workshop">
+<div id="angular-app" ng-app="workshop" ng-controller="LogCtrl">
 
     <header>
         <div>
@@ -41,6 +41,8 @@
 
     <div id="content">
     	{{query}}
+    	<br/>
+    	{{logs}}
         <table>
             <tr>
                 <td></td>
