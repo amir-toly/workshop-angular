@@ -42,14 +42,13 @@
     <div id="content">
     	{{query}}
     	<br/>
-    	{{logs}}
         <table>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+            <tr ng-repeat="log in logs">
+                <td>{{log.date}}</td>
+                <td>{{log.url}}</td>
+                <td>{{log.method}}</td>
+                <td>{{log.status}}</td>
+                <td>{{log.message}}</td>
             </tr>
         </table>
     </div>
