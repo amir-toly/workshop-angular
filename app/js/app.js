@@ -1,4 +1,12 @@
-var workshop = angular.module('workshop', []);
+var workshop = angular.module('workshop', []).
+		filter('truncate', function() {
+				return function(input) {
+					var out = input;
+					if (input.length > 12)
+						out = input.substring(0, 12) + "...";
+					return out;
+				}
+		});
 
 function LogCtrl($scope) {
 	$scope.logs = [
