@@ -18,7 +18,7 @@
 
     <header>
         <div>
-            <input type="text" />
+            <input type="text" ng-model="query" />
         </div>
     </header>
 
@@ -40,6 +40,7 @@
     </div>
 
     <div id="content">
+    	{{query}}
         <table>
             <tr>
                 <td></td>
